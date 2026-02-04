@@ -13,29 +13,19 @@ claude --version
 
 配置
 ```bash
-vim ~/.claude/settings.json
+vim ~/.bashrc
 ```
 直接粘贴
-```
-{
-  "env": {
-    "ANTHROPIC_AUTH_TOKEN": $API_TOKEN,
-    "ANTHROPIC_BASE_URL": "https://openrouter.ai/api",
-    "ANTHROPIC_API_KEY": "", # 为空即可
-    "API_TIMEOUT_MS": "3000000",
-    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": 1,
-    "ANTHROPIC_DEFAULT_HAIKU_MODEL": $CODE_MODEL,
-    "ANTHROPIC_DEFAULT_SONNET_MODEL": $CODE_MODEL,
-    "ANTHROPIC_DEFAULT_OPUS_MODEL": $CODE_MODEL,
-    "HTTP_X_TITLE": $CODE_MODEL
-  }
-}
-```
-最后
 ```bash
-export CODE_MODEL="openrouter/free"
-export API_TOKEN=API_TOKEN
+# Set these in your shell (e.g., ~/.bashrc, ~/.zshrc)
+export ANTHROPIC_BASE_URL="https://openrouter.ai/api"
+export ANTHROPIC_AUTH_TOKEN="sk-or-v1-xxx"
+export ANTHROPIC_API_KEY="" # Important: Must be explicitly empty
+export HTTP_X_TITLE=$CODE_MODEL         # 复制 openrouter 上的名字
+export ANTHROPIC_DEFAULT_HAIKU_MODEL=$CODE_MODEL
+export ANTHROPIC_DEFAULT_SONNET_MODEL=$CODE_MODEL
+export ANTHROPIC_DEFAULT_OPUS_MODEL=$CODE_MODEL
 ```
 即可
 
-不习惯命令行的，在完成以上配置后，可以安装 cluade vscode 插件
+不习惯命令行的，在完成以上配置后，可以安装 cluade for vscode 插件
