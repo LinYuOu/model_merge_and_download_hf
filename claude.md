@@ -30,6 +30,10 @@ export ANTHROPIC_DEFAULT_HAIKU_MODEL=$CODE_MODEL
 export ANTHROPIC_DEFAULT_SONNET_MODEL=$CODE_MODEL
 export ANTHROPIC_DEFAULT_OPUS_MODEL=$CODE_MODEL
 ```
+最后
+```bash
+source ~/.bashrc
+```
 即可
 
 不习惯命令行的，在完成以上配置后，可以安装 cluade for vscode 插件
