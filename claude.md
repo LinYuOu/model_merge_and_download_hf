@@ -1,4 +1,16 @@
 20260204 使用 claude 
+
+安装参考
+```bash
+https://code.claude.com/docs/en/setup#installation
+```
+
+查看
+```bash
+claude --version
+```
+有版本号就ok
+
 配置
 ```bash
 vim ~/.claude/settings.json
