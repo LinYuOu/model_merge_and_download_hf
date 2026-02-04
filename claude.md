@@ -15,6 +15,10 @@ claude --version
 ```bash
 vim ~/.bashrc
 ```
+执行
+```bash
+export CODE_MODEL=MODEL_API_NAME         # 复制 openrouter 上的名字
+```
 直接粘贴
 ```bash
 # Set these in your shell (e.g., ~/.bashrc, ~/.zshrc)
