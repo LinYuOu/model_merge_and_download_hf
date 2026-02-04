@@ -33,4 +33,4 @@ vim ~/.claude/settings.json
 ```
 即可
 
-不习惯命令行的可以安装 cluade vscode 插件
+不习惯命令行的，在完成以上配置后，可以安装 cluade vscode 插件
