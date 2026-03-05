@@ -1,0 +1,15 @@
+{
+    "search.exclude": {
+        "**/pyenv": true
+    },
+    "python.analysis.exclude": [
+        "**/pyenv"
+    ],
+    "files.exclude": {
+        "**/.venv": true,
+        "**/node_modules": true,
+        "**/pyenv": true
+    },
+    "python.analysis.ignore": ["**/.venv"]
+
+}
